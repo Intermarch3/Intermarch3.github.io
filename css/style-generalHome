@@ -1,0 +1,79 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #a9a9a9;
+}
+
+.section1 .nav-bar {
+    height: 100px;
+    width: 100%;
+    background-color: #555555;
+    display: flex;
+    align-items: center;
+}
+
+.section1 .nav-bar .txt{
+    color: #d4d4d4;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 50px;
+}
+
+.section1 .nav-bar .web-site1{
+    color: #d4d4d4;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
+    border: 3px solid #d4d4d4;
+    padding: 10px 10px;
+    margin-left: 30px;
+
+}
+
+.section1 .nav-bar .web-site1 a{
+    text-decoration: none;
+    color: #d4d4d4;
+}
+
+.ciné_st-michel{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.ciné_st-michel .content{
+    display: flex;
+}
+
+.ciné_st-michel .content .txt{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ciné_st-michel .content .img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ciné_st-michel .content .img img{
+   height: 500px;
+   width: auto;
+}
+
+footer{
+    height: 200px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
