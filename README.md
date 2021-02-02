@@ -10,3 +10,5 @@ If you want to work with an another theme, create a new page on the website and 
 at the beginning, the site was a school assignment and it is for this that the site has a weird name.
 
 thank you for all the people who collaborate in this project.
+
+For anyone who wants to see the website, open the GeneralHome.html page to access the rest of the site
