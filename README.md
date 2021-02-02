@@ -1,4 +1,4 @@
-Hello,
+
 I'm Lucas and thanks for help me.
 i just found out about github so i'm not very good on how the site works so if you have experience and want to help i would be happy to answer you.
 
@@ -12,3 +12,4 @@ at the beginning, the site was a school assignment and it is for this that the s
 thank you for all the people who collaborate in this project.
 
 For anyone who wants to see the website, open the GeneralHome.html page to access the rest of the site
+
