@@ -236,6 +236,23 @@ a.nav-lien{
     transform: translate(-20px, 0.5%);
 }
 
+.foot-general{
+    background-color: #555555;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foot-general a{
+    text-decoration: none;
+    color: #dfdfdf;
+    font-size: 35px;
+    border: 3px solid #dfdfdf;
+    padding: 10px 10px;
+}
+
 /* responsive */
 
 @media screen and (max-width: 1455px){

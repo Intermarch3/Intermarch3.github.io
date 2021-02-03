@@ -61,70 +61,7 @@ body{
     border: 3px solid black
 }
 
-.ciné_st-michel{
-    width: 50%;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.ciné_st-michel .content {
-    height: 100%;
-    width: auto;
-
-}
-
-.ciné_st-michel .content .txt{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    font-size: 18px;
-    color: #d4d4d4;
-}
-
-.ciné_st-michel .content .img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-
-}
-
-.ciné_st-michel .content .img img{
-   height: 500px;
-   width: auto;
-
-   border-radius: 20px;
-}
-
-.ciné_st-michel .content .content-link{
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-}
-
-.ciné_st-michel .content .content-link .link {
-    background-color: #d4d4d4;
-    border-radius: 50px;
-    padding: 15px 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-    height: 15px;
-    width: 50px;
-}
-
-.ciné_st-michel .content .link a{
-    text-decoration: none;
-    color:  #7a7a7a;
-    font-size: 20px;
-}
 
 .footer{
     height: 250px;
