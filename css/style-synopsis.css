@@ -72,7 +72,7 @@ a.nav-lien{
 /* section 1 */
 
 .section1{
-    height: 700px;
+    height: 950px;
     width: 100%;
     display: flex;
 }
@@ -86,7 +86,7 @@ a.nav-lien{
 }
 
 .section1 .content-img-film img{
-    max-height: 90vh;
+    max-height: 800px;
     width: auto;
     transition: 0.8s ease-out;
 }
@@ -104,14 +104,14 @@ a.nav-lien{
 }
 
 .section1 .content-text .text{
-    height: 80vh;
+    height: 725px;
     width: 65%;
     border: 5px solid;
     border-image: linear-gradient(to right, #f79d00, #64f38c);
     border-image-slice: 1;
     text-align: center;
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 23px;
     padding: 40px 40px;
     color: #523c34;
 }
@@ -119,13 +119,13 @@ a.nav-lien{
 /* section 2 */
 
 .section2{
-    height: 70vh;
+    height: 725px;
     width: 100%;
     background-color: #cacaca;
     clip-path: polygon(50% 0, 100% 10%, 100% 100%, 0 100%, 0 10%);
     transition: 0.5s ease-out;
     display: flex;
-    padding-top: 20vh;
+    padding-top: 180px;
     box-shadow: inset 0px -2px 5px 0px #5a5a5a;
 }
 
@@ -149,14 +149,14 @@ a.nav-lien{
 }
 
 .section2 .content-text .text{
-    height: 64vh;
+    height: 600px;
     width: 65%;
     border: 5px solid;
     border-image: linear-gradient(to right, #ffdb9d, #7784a0);
     border-image-slice: 1;
     text-align: center;
     font-weight: bolder;
-    font-size: 16px;
+    font-size: 18.5px;
     padding: 10px 40px;
     padding-bottom: 55px;
     color: #523c34;
@@ -187,7 +187,7 @@ a.nav-lien{
 /* section 3 */
 
 .section3{
-    height: 80vh;
+    height: 800px;
     width: 100%;
     display: flex;
 }
@@ -203,7 +203,7 @@ a.nav-lien{
 }
 
 .section3 .content-img-film img{
-    max-height: 70vh;
+    max-height: 650px;
     width: auto;
     transition: 0.8s ease-out;
 }
@@ -223,14 +223,14 @@ a.nav-lien{
 }
 
 .section3 .content-text .text{
-    height: 63vh;
+    height: 585px;
     width: 65%;
     border: 5px solid;
     border-image: linear-gradient(to right, #2663a2, #4d565e);
     border-image-slice: 1;
     text-align: center;
     font-weight: bolder;
-    font-size: 24px;
+    font-size: 27px;
     padding: 40px 40px;
     color: #523c34;
     transform: translate(-20px, 0.5%);
@@ -251,6 +251,10 @@ a.nav-lien{
     font-size: 35px;
     border: 3px solid #dfdfdf;
     padding: 10px 10px;
+}
+
+.foot-general a:hover{
+    border: 3px solid black
 }
 
 /* responsive */

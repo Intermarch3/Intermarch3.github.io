@@ -155,3 +155,7 @@ body{
     display: flex;
     align-items: center;
 }
+
+.footer .content:hover{
+    border: 5px solid black
+}

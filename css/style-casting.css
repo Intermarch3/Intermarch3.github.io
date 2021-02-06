@@ -199,6 +199,10 @@ a.nav-lien{
     padding: 10px 10px;
 }
 
+.foot-general a:hover{
+    border: 3px solid black
+}
+
 /* responsive */
 
 @media screen and (max-width: 1430px){

@@ -97,7 +97,7 @@ a.nav-lien{
 /* section 2 */
 
 .section2 {
-    height: 630px;
+    height: 810px;
     width: 100%;
 }
 
@@ -235,6 +235,10 @@ a.lien-p2:hover{
     font-size: 35px;
     border: 3px solid #dfdfdf;
     padding: 10px 10px;
+}
+
+.foot-general a:hover{
+    border: 3px solid black
 }
 
 /* responsive */

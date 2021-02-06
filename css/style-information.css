@@ -61,7 +61,38 @@ body{
     border: 3px solid black
 }
 
+.section2 .content{
+    display: flex;
+    height: 600px;
+}
 
+.section2 .content .txt{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 80px;
+}
+
+.section2 .content .txt p{
+    font-size: 41px;
+    font-family: 'Poppins', sans-serif;
+    color: #d4d4d4;
+    text-align: center;
+    width: 95%;
+}
+
+.section2 .content .img{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+
+.section2 .content .img img{
+    height: 400px;
+    width: auto;
+}
 
 .footer{
     height: 250px;
@@ -91,4 +122,8 @@ body{
     padding: 20px 10px;
     display: flex;
     align-items: center;
+}
+
+.footer .content:hover{
+    border: 5px solid black
 }
