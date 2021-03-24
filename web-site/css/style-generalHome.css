@@ -61,6 +61,11 @@ body{
     border: 3px solid black
 }
 
+.middle {
+    display: flex;
+    align-items: center;
+}
+
 .ciné_st-michel{
     width: 50%;
     margin-top: 100px;
@@ -101,6 +106,50 @@ body{
 
    border-radius: 20px;
 }
+
+/* css oups */
+
+.oups{
+    width: 50%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.oups .content {
+    height: 100%;
+    width: auto;
+
+}
+
+.oups .content .txt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #d4d4d4;
+}
+
+.oups .content .img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+
+}
+
+.oups .content .img img{
+   height: auto;
+   width: 800px;
+}
+
+
+/* fin css oups */
 
 .ciné_st-michel .content .content-link{
     display: flex; 
