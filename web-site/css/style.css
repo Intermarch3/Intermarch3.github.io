@@ -89,7 +89,7 @@ a.nav-lien{
     height: 100%;
     position: absolute;
     content: "";
-    background-image: url(../img/main-img.png);
+    background-image: url(../img/main-img.jpeg);
     background-position: bottom;
     background-size: cover;
 }
