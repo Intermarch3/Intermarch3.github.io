@@ -304,6 +304,7 @@ a.nav-lien{
     }
 }
 
+
 @media screen and (max-width: 1030px){
     .content img {
         transform: translate(-200%, 0%);
@@ -345,28 +346,5 @@ a.nav-lien{
 }
 
 
-@media screen and (max-width: 500px){
-    .section2 {
-        padding-top: 10vh;
-    }
 
-    .section1 {
-        padding-top: 5vh;
-    }
-}
 
-@media screen and (max-width: 350px){
-    .section2 {
-        padding-top: 8vh;
-    }
-}
-
-@media screen and (max-width: 260px){
-    .section2 {
-        padding-top: 6vh;
-    }
-
-    .section1 {
-        padding-top: 3vh;
-    }
-}
