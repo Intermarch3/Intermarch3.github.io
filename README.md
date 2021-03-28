@@ -17,3 +17,4 @@ Si vous avez un problème avec un de mes projets ( fonctionnement, bug ...) ou q
 * discord : Luka74#3272
 * insta : @lucasl74
 * twitter : @intermarch3
+* Ou dans l'espace commentaire du projet
