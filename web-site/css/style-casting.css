@@ -222,7 +222,7 @@ a.nav-lien{
     }
 
     .section1 {
-        height: 1160px;
+        height: 1200px;
         clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
     }
 
@@ -286,6 +286,18 @@ a.nav-lien{
     }
 }
 
+@media screen and (max-width: 1130px){
+    .section1 {
+        height: 1100px;
+    }
+}
+
+@media screen and (max-width: 1070px){
+    .section2 {
+        height: 2275px;
+    }
+}
+
 @media screen and (max-width: 1039px){
     .section1 {
          height: 1090px;
@@ -323,9 +335,38 @@ a.nav-lien{
 
     .section2{
         clip-path: polygon(0 0, 100% 2%, 100% 100%, 0 98%);
+        height: 2050px;
+        padding-top: 15vh;
     }
 
     .section1 {
         height: 1000px;
+    }
+}
+
+
+@media screen and (max-width: 500px){
+    .section2 {
+        padding-top: 10vh;
+    }
+
+    .section1 {
+        padding-top: 5vh;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .section2 {
+        padding-top: 8vh;
+    }
+}
+
+@media screen and (max-width: 260px){
+    .section2 {
+        padding-top: 6vh;
+    }
+
+    .section1 {
+        padding-top: 3vh;
     }
 }

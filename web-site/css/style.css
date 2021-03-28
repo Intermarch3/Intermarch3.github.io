@@ -338,7 +338,7 @@ a.lien-p2:hover{
     }
 
     .text {
-        font-size: 2vh;
+        font-size: 2.7vh;
     }
 }
 
@@ -354,8 +354,3 @@ a.lien-p2:hover{
     }
 }
 
-@media screen and (max-width: 915px){
-    .img-realisateur::after {
-        font-size: 5.5vh;
-    }
-}
