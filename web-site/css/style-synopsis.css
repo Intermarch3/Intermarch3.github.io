@@ -271,7 +271,7 @@ a.nav-lien{
     }
     
     .section1 .content-text .text {
-        font-size: 18.5px;
+        font-size: 21px;
     }
 }
 
@@ -287,6 +287,26 @@ a.nav-lien{
     .section1 .content-text .text {
         font-size: 17.5px;
     }
+
+    .section1 .content-img-film img:hover {
+        transform: scale(0.85);
+    }
+
+    .section1 .content-img-film img {
+        transform: scale(0.9);
+    }
+
+    .section1 .content-text .text {
+        height: 600px;
+        font-size: 19px;
+        padding: 15px 40px 40px 40px;
+    }
+}
+
+@media screen and (max-width: 1205px){
+    .section1 .content-text .text {
+        font-size: 18.5px; 
+    }
 }
 
 
@@ -297,6 +317,24 @@ a.nav-lien{
 
     .bouton {
         margin: 0% 10%;
+    }
+
+    .section1 .content-img-film img:hover {
+        transform: scale(0.7);
+    }
+
+    .section1 .content-img-film img {
+        transform: scale(0.75);
+    }
+
+    .section1 .content-text .text {
+        font-size: 17.8px;
+    }
+}
+
+@media screen and (max-width: 1090px){
+    .section1 .content-text .text {
+        font-size: 17.2px;
     }
 }
 
@@ -312,6 +350,10 @@ a.nav-lien{
     .bouton:nth-child(1) {
         margin-left: 20%;
     }
+
+    .section1 .content-text .text {
+        font-size: 16.5px;
+    }
 }
 
 @media screen and (max-width: 960px){
@@ -322,6 +364,24 @@ a.nav-lien{
     .bouton {
         margin: 0% 5%;
     }
+
+    .section1 .content-img-film img:hover {
+        transform: scale(0.55);
+    }
+
+    .section1 .content-img-film img {
+        transform: scale(0.6);
+    }
+
+    .section1 .content-text .text {
+        font-size: 16.3px;
+    }
+}
+
+@media screen and (max-width: 855px){
+    .section1 .content-text .text {
+        font-size: 15.4px;
+    }
 }
 
 @media screen and (max-width: 830px){
@@ -331,6 +391,44 @@ a.nav-lien{
 
     .bouton:nth-child(1) {
         margin-left: 12%;
+    }
+
+    .section1 .content-img-film img:hover {
+        transform: scale(0.45);
+    }
+
+    .section1 .content-img-film img {
+        transform: scale(0.5);
+    }
+
+    .section1 .content-text .text {
+        height: 80%;
+        width: 50%;
+    }
+
+    .section1 .content-text {
+        height: 60%;
+        width: 100%;
+    }
+
+    .section1 {
+        height: 1125px;
+        flex-direction: column-reverse;
+    }
+
+    .section1 .content-img-film {
+        height: 40%;
+        width: 100%;
+    }
+
+    .section1 .content-text .text {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 770px){
+    .section1 .content-text .text {
+        font-size: 16.5px;
     }
 }
 
@@ -348,10 +446,23 @@ a.nav-lien{
         font-size: 13px;
     }
     
-    .text p{
-        font-size: 3.5vh;
+    .section1 .content-text .text {
+        font-size: 16px;
     }
 }
+
+@media screen and (max-width: 700px){
+    .section1 .content-text .text {
+        font-size: 15.5px;
+    }
+}
+
+@media screen and (max-width: 645px){
+    .section1 .content-text .text {
+        font-size: 14.6px;
+    }
+}
+
 
 @media screen and (max-width: 610px){
     .nav-bar {
@@ -371,7 +482,18 @@ a.nav-lien{
     .content img {
         transform: translate(-150%, 0%);
     }
+
+    .section1 .content-text .text {
+        font-size: 14.1px;
+    }
 }
+
+@media screen and (max-width: 530px){
+    .section1 .content-text .text {
+        font-size: 13.5px;
+    }
+}
+
 
 @media screen and (max-width: 450px){
     .bouton {
@@ -386,6 +508,12 @@ a.nav-lien{
     .nav-bar {
         height: 4em;
     }
+
+    .section1 .content-text .text {
+        font-size: 13px;
+        padding: 15px 20px 20px 20px;
+        width: 60%;
+    }
 }
 
 @media screen and (max-width: 370px){
@@ -395,6 +523,10 @@ a.nav-lien{
 
     .content img {
         transform: translate(-130%, 0%);
+    }
+
+    .section1 .content-text .text {
+        font-size: 12.4px;
     }
 }
 
@@ -409,5 +541,34 @@ a.nav-lien{
 
     .nav-bar {
         height: 3em;
+    }
+
+    .section1 .content-text .text {
+        font-size: 11.7px;
+        padding: 0px 20px 20px 20px;
+        width: 60%;
+    }
+
+
+    .section1 {
+        height: 1000px;
+    }
+
+    .section1 .content-text {
+        height: 65%;
+    }
+
+    .section1 .content-img-film {
+        height: 35%;
+    }
+
+    .section1 .content-img-film img {
+        transform: scale(0.38);
+    }
+}
+
+@media screen and (max-width: 300px){
+    .section1 .content-text .text {
+        font-size: 11px;
     }
 }
