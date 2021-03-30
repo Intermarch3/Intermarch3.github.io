@@ -1,7 +1,7 @@
 ## salut 👋
 Voici mon portfolio qui consiste à réunir tous mes projets de dev sur le même "repository" pour me constituer un dossier pour mes futurs école.
 J'espère que mon travaille vous plaira 😁 
-Si vous avez un problème avec un de mes projets ( fonctionnement, bug ...) ou que vous avez des conseils, je serais impatient de vous répondre.
+Si vous avez un problème avec un de mes projets ( fonctionnement, bug ...) ou que vous avez des conseils, contacté moi, je serais impatient de vous répondre.
 
 ### Organisation 📚 :
 * La première page du projet est un site web, il contient tous les liens vers :
@@ -17,4 +17,4 @@ Si vous avez un problème avec un de mes projets ( fonctionnement, bug ...) ou q
 * discord : Luka74#3272
 * insta : @lucasl74
 * twitter : @intermarch3
-* Ou dans l'espace commentaire du projet
+* Ou dans [l'espace commentaire du projet](https://github.com/Intermarch3/Intermarch3.github.io/discussions/2)
