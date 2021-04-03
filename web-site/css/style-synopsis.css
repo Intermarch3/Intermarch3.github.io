@@ -691,7 +691,7 @@ a.nav-lien{
     }
 
     .section2 .content-text .text {
-        font-size: 11px;
+        font-size: 10.5px;
     }
 
     .section2 {
@@ -774,7 +774,6 @@ a.nav-lien{
         width: 60%;
     }
 
-
     .section1 {
         height: 1000px;
     }
@@ -789,6 +788,10 @@ a.nav-lien{
 
     .section1 .content-img-film img {
         transform: scale(0.38);
+    }
+
+    .section2 .content-text .text {
+        font-size: 10.5px;
     }
 
     .section3 .content-text .text {
