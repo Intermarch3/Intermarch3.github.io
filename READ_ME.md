@@ -1,5 +1,6 @@
 ## salut 👋
-Voici mon portfolio qui consiste à réunir tous mes projets de dev sur le même "repository" pour me constituer un dossier pour mes futurs école.
+Voici mon portfolio personnel.
+Il contient tous les site web que j'ai créé plus des lien vers mes autres projets.
 J'espère que mon travaille vous plaira 😁 
 Si vous avez un problème avec un de mes projets ( fonctionnement, bug ...) ou que vous avez des conseils, contacté moi, je serais impatient de vous répondre.
 
