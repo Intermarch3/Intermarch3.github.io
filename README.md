@@ -1,21 +1,17 @@
-## salut 👋
-Voici mon portfolio personnel.
-Il contient tous les site web que j'ai créé plus des lien vers mes autres projets.
-J'espère que mon travaille vous plaira 😁 
-Si vous avez un problème avec un de mes projets ( fonctionnement, bug ...) ou que vous avez des conseils, contacté moi, je serais impatient de vous répondre.
+## Hello 👋
+Here is my personal portfolio. It contains all the websites I created plus links to my other projects. I hope you will like my work 😁 If you have a problem with one of my projects (operation, bug ...) or that you have advice, contact me, I would be impatient to answer you.
 
-### Organisation 📚 :
-* La première page du projet est un site web (en développement), il contient tous les liens vers :
-  * les autres site web réalisées
-  * les autre projet en :
+### Organization 📚 :
+* The first page of the project is a website (in development), it contains all the links to:
+  * other websites created
+  * other project in :
     * python 🐍
     * PlantUML 📊
     * C# 🎮
     * etc . . .
 
-#### Je suis un débutant dans le domaine donc si vous avez de l'expérience et que vous voulez m'aidez, n'hésiter pas 😉
-### Me contacter 📧 : 
+#### I am a beginner in the field so if you have experience and want to help me, do not hesitate 😉
+### Contact me 📧 : 
 * discord : Luka74#3272
 * insta : [@lucasl74](https://www.instagram.com/lucasl74/)
-* twitter : [@intermarch3](https://twitter.com/intermarch3)
 * Ou dans [l'espace commentaire du projet](https://github.com/Intermarch3/Intermarch3.github.io/discussions/2)
