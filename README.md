@@ -10,7 +10,7 @@ Here is my personal portfolio. It contains all the websites I created plus links
     * C# 🎮
     * etc . . .
 
-#### I am a beginner in the field so if you have experience and want to help me, do not hesitate 😉
+#### I am a beginner so if you have any experience and want to help me, do not hesitate 😉
 ### Contact me 📧 : 
 * discord : Luka74#3272
 * insta : [@lucasl74](https://www.instagram.com/lucasl74/)
