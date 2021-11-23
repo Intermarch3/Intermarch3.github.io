@@ -5,7 +5,7 @@ J'espère que mon travaille vous plaira 😁
 Si vous avez un problème avec un de mes projets ( fonctionnement, bug ...) ou que vous avez des conseils, contacté moi, je serais impatient de vous répondre.
 
 ### Organisation 📚 :
-* La première page du projet est un site web, il contient tous les liens vers :
+* La première page du projet est un site web (en développement), il contient tous les liens vers :
   * les autres site web réalisées
   * les autre projet en :
     * python 🐍
