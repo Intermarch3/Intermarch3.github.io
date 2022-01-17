@@ -14,4 +14,4 @@ Here is my personal portfolio. It contains all the websites I created plus links
 ### Contact me 📧 : 
 * discord : Luka74#3272
 * insta : [@lucasl74](https://www.instagram.com/lucasl74/)
-* Ou dans [l'espace commentaire du projet](https://github.com/Intermarch3/Intermarch3.github.io/discussions/2)
+* Or in the [comment space](https://github.com/Intermarch3/Intermarch3.github.io/discussions/2)
