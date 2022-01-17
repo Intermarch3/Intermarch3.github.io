@@ -1,3 +1,6 @@
+## Warning
+This project is on development, so now nothing is appear apart the link of my latest website for my school.
+
 ## Hello 👋
 Here is my personal portfolio. It contains all the websites I created plus links to my other projects. I hope you will like my work 😁 If you have a problem with one of my projects (execution, bug ...) or that you have advice, contact me, I would be impatient to answer you.
 
@@ -14,4 +17,4 @@ Here is my personal portfolio. It contains all the websites I created plus links
 ### Contact me 📧 : 
 * discord : Luka74#3272
 * insta : [@lucasl74](https://www.instagram.com/lucasl74/)
-* Or in the [comment space](https://github.com/Intermarch3/Intermarch3.github.io/discussions/2)
+* Twitter : [Intermarch3](https://twitter.com/intermarch3)
