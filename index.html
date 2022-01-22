@@ -1,4 +1,132 @@
-<h1>cette page est mon portfolio</h1>
-<p>mais comme tu peut le voir c'est en développement</p>
-<a href="web-site/site_1/html/index.html" ><h2>clic ici pour voire mon site web sur le cinéma (a peu près fini)</h2></a>
-<a href="https://github.com/Intermarch3/Intermarch3.github.io" ><h3>clic ici pour voire le code du site et tout le reste du projet sur github </h2></a>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Lucas's portfolio</title>
+        <link rel="stylesheet" href="css/style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="img/favicon.ico" />
+        <!-- lien icones-->
+        <script src="https://kit.fontawesome.com/463748a9c5.js" crossorigin="anonymous"></script>
+        <!-- lien javascript -->
+        <script type="text/javascript" src="js/script.js"></script>
+        <!-- lien librairie et font -->
+        <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+        <script src="https://unpkg.com/scrollreveal"></script>
+    </head>
+    <body>
+        <div class="welcome_page">
+            <h1>Hello, my name is Lucas.</h1>
+            <p class="subtitle">Welcome to my website !</p>
+            <div class="next_btn">
+                <a href="#" onclick="disparition()"><i class="fas fa-arrow-circle-down fa-3x"></i></a>
+            </div>
+        </div>
+        <div class="page_general">
+            <div class="nav-bar">
+                <div class="content">
+                    <a href="#home" class="link main_page"><img src="img/Logo2.png" alt="my logo" class="logo"></a>
+                    <div class="content_btn">
+                        <div class="btn"><a href="#about_me">about me</a></div>
+                        <div class="btn"><a href="#anchor_section3">project</a></div>
+                        <div class="btn"><a class="contact_page" href="#contact">Contact me</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="page_acceuil" id="home">
+                <section class="section1">
+                    <div class="blur" data-tilt  data-tilt-speed="5000" data-tilt-max="5" data-tilt-transition="true" data-tilt data-tilt-scale="1.08">
+                        <h3>Hello !</h3>
+                        <h1>I am Lucas a.k.a Intermarch3</h1>
+                        <h3>computer development student</h3>
+                        <div class="contact_page"><a href="#contact" class="link_contact_page"><h1>Contact me</h1></a></div>
+                    </div>
+                </section>
+                <section class="section2" >
+                    <head class="wave"><img src="img/wave.png" alt="wave"></head>
+                    <div class="contender" id="about_me">
+                        <div class="card">
+                            <div class="content">
+                                <div class="title">
+                                    <h1>Who i am ?</h1>
+                                </div>
+                                <div class="text">
+                                    <h3>I'm Lucas, i'm french and i'm 16 years old.<br>I want to be a dev to improve daily life.<br>
+                                        I know several language such as :<br>
+                                            - Python 🐍<br>
+                                            - HTML/CSS 🔗<br>
+                                            - Javascript ✨<br>
+                                            - C# in unity for making games 🎮 <br>
+                                            - PlantUML for graphics 📈<br><br>
+                                        I want to learn more and more because i ❤ coding.<br>
+                                        Look right for my main language and their skill rate.</h3>
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <span>HTML/CSS</span>
+                                <div class="skill">
+                                    <div class="bar html-css"></div>
+                                </div>
+                                <span>Javascript</span>
+                                <div class="skill">
+                                    <div class="bar javascript"></div>
+                                </div>
+                                <span>Python</span>
+                                <div class="skill">
+                                    <div class="bar python"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="intersection">
+                    <head><img src="img/wave_bas.png" alt="wave" style="width: 100%;"></head>
+                    <div id="anchor_section3" style="display: hidden; top: -120px; position: relative;"></div>
+                </div>
+                <section class="section3" id="section3">
+                    <div class="title">
+                        <h1>My project</h1>
+                    </div>
+                    <div class="contender">
+                        <div class="project-box-1"></div>
+                        <div class="project-box-2"></div>
+                        <div class="project-box-3"></div>
+                        <div class="project-box-4"></div>
+                    </div>
+                    <!--<div class="contender" id="project">
+                        <div class="skip_left_btn"><a><i class="fas fa-arrow-circle-left fa-3x"></i></a></div>
+                        <div class="horizontal-scroll" id="scroll_menu">
+                            <div class="card project1">
+                                <div class="img"></div>
+                                <div class="content">
+                                    <div class="cardTitle">
+                                        <h1>My first website</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card project2">card2</div>
+                            <div class="card project3">card3</div>
+                            <div class="card project4">card4</div>
+                            <div class="card project5">card5</div>
+                            <div class="card project6">card6</div>
+                            <div class="card project7">card7</div>
+                            <div class="card project8">card8</div>
+                            <div class="card project9">card9</div>
+                            <div class="card project10">card10</div>
+                        </div>
+                        <div class="skip_right_btn"><a><i class="fas fa-arrow-circle-right fa-3x"></i></a></div>
+                    </div>-->
+                </section>
+                <section class="section4">
+
+                </section>
+            </div>
+        </div>
+        <script>
+        </script>
+        <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    </body>
+</html>
