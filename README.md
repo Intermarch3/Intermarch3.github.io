@@ -1,5 +1,5 @@
 ## Warning
-This project is on development, so now nothing is appear apart the link of my latest website for my school.
+This project is on development, the site has a lot of bugs and it is incomplete
 
 ## Hello 👋
 Here is my personal portfolio. It contains all the websites I created plus links to my other projects. I hope you will like my work 😁 If you have a problem with one of my projects (execution, bug ...) or that you have advice, contact me, I would be impatient to answer you.
