@@ -8,7 +8,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/png" href="web-site/site_2/img/favicon.ico" />
         <script src="https://kit.fontawesome.com/463748a9c5.js" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="web-site/site_2/js/script.js"></script>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     </head>
@@ -23,10 +22,10 @@
         <div class="page_general">
             <div class="nav-bar">
                 <div class="content">
-                    <a href="#home" class="link main_page"><img src="web-site/site_2/img/Logo2.png" alt="my logo" class="logo"></a>
+                    <a href="#home" class="link main_page"><img src="web-site/site_2/img/Logo.png" alt="my logo" class="logo"></a>
                     <div class="content_btn">
                         <div class="btn"><a href="#about_me">about me</a></div>
-                        <div class="btn"><a href="#anchor_section3">project</a></div>
+                        <div class="btn"><a href="#projects">projects</a></div>
                         <div class="btn"><a class="contact_page" href="#contact">Contact me</a></div>
                     </div>
                 </div>
@@ -57,7 +56,8 @@
                                             - C# in unity for making games 🎮 <br>
                                             - PlantUML for graphics 📈<br><br>
                                         I want to learn more and more because i ❤ coding.<br>
-                                        Look right for my main language and their skill rate.</h3>
+                                        Look right for my main language and their skill rate.
+                                    </h3>
                                 </div>
                             </div>
                             <div class="skill-bar">
@@ -79,48 +79,76 @@
                 </section>
                 <div class="intersection">
                     <head><img src="web-site/site_2/img/wave_bas.png" alt="wave" style="width: 100%;"></head>
-                    <div id="anchor_section3" style="display: hidden; top: -120px; position: relative;"></div>
                 </div>
-                <section class="section3" id="section3">
-                    <div class="title">
-                        <h1>My project</h1>
-                    </div>
-                    <div class="contender">
-                        <div class="project-box-1"></div>
-                        <div class="project-box-2"></div>
-                        <div class="project-box-3"></div>
-                        <div class="project-box-4"></div>
-                    </div>
-                    <!--<div class="contender" id="project">
-                        <div class="skip_left_btn"><a><i class="fas fa-arrow-circle-left fa-3x"></i></a></div>
-                        <div class="horizontal-scroll" id="scroll_menu">
-                            <div class="card project1">
-                                <div class="img"></div>
-                                <div class="content">
-                                    <div class="cardTitle">
-                                        <h1>My first website</h1>
-                                    </div>
+                <section class="section3">
+                    <div id="projects" style="top: -100px; position: relative;"></div>
+                    <div class="title" ><h1>My projects</h1></div>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="slider-item swiper-slide">
+                                <div class="slider-image-wrapper">
+                                    <img class="slider-image" src="https://images.unsplash.com/photo-1498307833015-e7b400441eb8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2600&q=80" alt="SliderImg">
+                                </div>
+                                <div class="slider-item-content">
+                                    <h1>Py_Pong</h1>
+                                    <p>My Pong game in python with Pygame made in 2022 at school with love</p>
+                                    <h4>Language : python</h4>
                                 </div>
                             </div>
-                            <div class="card project2">card2</div>
-                            <div class="card project3">card3</div>
-                            <div class="card project4">card4</div>
-                            <div class="card project5">card5</div>
-                            <div class="card project6">card6</div>
-                            <div class="card project7">card7</div>
-                            <div class="card project8">card8</div>
-                            <div class="card project9">card9</div>
-                            <div class="card project10">card10</div>
+                            <div class="slider-item swiper-slide">
+                                <div class="slider-image-wrapper">
+                                    <img class="slider-image" src="https://images.unsplash.com/photo-1491900177661-4e1cd2d7cce2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80" alt="SliderImg">
+                                </div>
+                                <div class="slider-item-content">
+                                    <h1>Auto_vote</h1>
+                                    <p>Uses proxies to automatically vote on a website without the restriction of IP address</p>
+                                    <h4>Language : python</h4>
+                                </div>
+                            </div>
+                            <div class="slider-item swiper-slide">
+                                <div class="slider-image-wrapper">
+                                    <img class="slider-image" src="https://images.unsplash.com/photo-1482192505345-5655af888cc4?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2600&q=80" alt="SliderImg">
+                                </div>
+                                <div class="slider-item-content">
+                                    <h1>Ecole-directe-in-cmd</h1>
+                                    <p>Ecole direct in python to get his : course schedule, grade, homeworks. its my favorite project made in 2020</p>
+                                    <h4>Language : python</h4>
+                                </div>
+                            </div>
+                            <div class="slider-item swiper-slide">
+                                <div class="slider-image-wrapper">
+                                    <img class="slider-image" src="https://images.unsplash.com/photo-1564604761388-83eafc96f668?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=801.2.1&auto=format&fit=crop&w=2167&q=80" alt="SliderImg">
+                                </div>
+                                <div class="slider-item-content">
+                                    <h1>Spam_bot-python</h1>
+                                    <p>Little spam program in python for spam friend on any platform. facile d'utilisation made in 2019</p>
+                                    <h4>Language : python</h4>
+                                </div>
+                            </div>
+                            <div class="slider-item swiper-slide">
+                                <div class="slider-image-wrapper">
+                                    <img class="slider-image" src="web-site/site_2/img/photoCard_project1.jpeg" alt="SliderImg">
+                                </div>
+                                <div class="slider-item-content">
+                                    <h1>My first website</h1>
+                                    <p>my first website by me in 2020 for my teacher. it's a movie description website</p>
+                                    <h4>Language : HTML/CSS</h4>
+                                </div>
+                            </div>
                         </div>
-                        <div class="skip_right_btn"><a><i class="fas fa-arrow-circle-right fa-3x"></i></a></div>
-                    </div>-->
+                        <div class="slider-buttons">
+                            <button class="swiper-button-prev"><b>Prev</b></button>
+                            <button class="swiper-button-next"><b>Next</b></button>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
                 </section>
-                <section class="section4">
-
-                </section>
+                <section class="section4" style="height: 50vh; width: 100%; background-color: blue;"></section>
             </div>
         </div>
         <script type="text/javascript" src="web-site/site_2/js/vanilla-tilt.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+        <script type="text/javascript" src="web-site/site_2/js/script.js"></script>
     </body>
 </html>
