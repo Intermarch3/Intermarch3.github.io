@@ -1,0 +1,53 @@
+/* menu section */
+#menu {
+    background-color: rgb(126, 213, 239);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+/* quizz section */
+#main {
+    height: fit-content;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.question {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.reponse {
+    height: 10vh;
+}
+
+.btn {
+    border-color: rgb(32, 32, 172);
+}
+
+.correction {
+    height: fit-content;
+}
+
+/* end section */
+#end {
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center
+}
+
+#end h2 {
+    margin-left: 100px;
+}
