@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Quizz physique</title>
+</head>
+<body>
+    <div id="menu"> <!-- page d'acceuil (menu) -->
+        <h1>quizz physique</h1>
+        <button id="go" onclick="play()">go !!!</button>
+    </div>
+    <div id="main"> <!-- page de quizz -->
+        <div class="question">
+            <h1>quelle est cette couleur</h1>
+        </div>
+        <div class="reponse">
+            <button class="btn" onclick="check(this)">test</button>
+            <button class="btn" onclick="check(this)"></button>
+            <button class="btn" onclick="check(this)"></button>
+        </div>
+        <div class="correction">
+            <p id="info_reponse"></p>
+        </div>
+        <div class="next">
+            <button onclick="next()">suivant</button>
+            <h2 class="nb_questions"></h2>
+            <h2 class="score"></h2>
+        </div>
+    </div>
+    <div id="end"> <!-- page de fin -->
+        <h1>Fin !!!</h1>
+        <h2 id="end_score"></h2>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
