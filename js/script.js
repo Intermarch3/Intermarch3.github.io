@@ -1,3 +1,10 @@
+$(".social-btn").hover(
+    function() {
+        this.attributes[1].nodeValue = '#367BF0'
+    },function() {
+        this.attributes[1].nodeValue = '#f5f3ea'
+    }
+)
 
 function disparition(){
     $(document).ready(function(){
@@ -45,6 +52,7 @@ function AnimateBtn() {
             return false
     });
 }
+
 
 window.onload=function(){
     AnimateBtn()

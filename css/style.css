@@ -133,7 +133,7 @@ body {
     align-items: center;
     height: 80px;
     width: 100%;
-    background-color: #0f1431;
+    background-color: #1c1d26;
     box-shadow: 0px -3px 20px 0px var(--primary-color);
     position: fixed;
     z-index: 10;
@@ -202,14 +202,14 @@ body {
 }
 
 .page_general .page_acceuil .section1 {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    display: flex;
     align-items: center;
     height: 85vh;
     width: 100%;
     background-image: url("../img/img_acceuil.jpeg");
     background-size: cover;
     padding-top: 80px;
+    transform: translateY(1px);
 }
 
 .page_general .page_acceuil .section1 .blur {
@@ -228,6 +228,52 @@ body {
     position: relative;
     border-top: 1px solid rgb(125 125 125 / 40%);
     border-right: 1px solid rgb(125 125 125 / 25%);
+    margin-left: 10vw;
+}
+
+#hi {
+    position: relative;
+}
+
+#hi::after {
+    content: "";
+    position: absolute;
+    background: url(../img/hi.png);
+    background-size: 100%;
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    animation-delay: 1.5s;
+    animation-iteration-count: infinite;
+    display: inline-block;
+    width: 35px;
+    height: -webkit-fill-available;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+@keyframes wave-animation {
+    0%{
+        transform:rotate(0deg)
+    }
+    10%{
+        transform:rotate(-10deg)
+    }
+    20%{
+        transform:rotate(12deg)
+    }
+    30%{
+        transform:rotate(-10deg)
+    }
+    40%{
+        transform:rotate(9deg)
+    }
+    50%{
+        transform:rotate(0deg)
+    }
+    to{
+        transform:rotate(0deg)
+    }
 }
 
 .page_general .page_acceuil .section1 .blur::after {
@@ -286,6 +332,7 @@ body {
 }
 
 .page_general .page_acceuil .section2 img {
+    height: 300px;
     width: 100%;
 }
 
@@ -419,6 +466,7 @@ body {
     align-items: center;
     flex-direction: column;
     font-family: var(--font);
+    margin-bottom: 50px;
 }
 
 .section3 .title h1 {
@@ -577,7 +625,7 @@ body {
     justify-content: space-evenly;
     width: 100%;
     padding-top: 14px;
-    z-index: 10;
+    z-index: 9;
 }
 
 .swiper-button-next,
@@ -591,6 +639,7 @@ body {
     margin-left: 4px;
     font-size: 16px;
 }
+
 .swiper-button-next:before,
 .swiper-button-prev:before {
     content: "";
@@ -607,22 +656,294 @@ body {
     width: 100%;
 }
 
-.socials {
-    position: fixed;
-    top: 12px;
-    right: 16px;
-    display: flex;
-    align-items: center;
-}
-.socials .social-link {
-    display: inline-block;
-    margin-left: 8px;
-    color: #fff;
-}
-
 @media screen and (max-width: 520px) {
     .swiper-button-next:hover:before,
 .swiper-button-prev:hover:before {
     display: none;
     }
+}
+
+.section4 {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--bg_dark_color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section4 .contender {
+    height: 500px;
+    width: 75%;
+    background-color: #1c1d26;
+    border-radius: 20px;
+    display: flex;
+    padding: 20px 20px;
+}
+
+.section4 .contender .content {
+    height: -webkit-fill-available;
+    width: 50%;
+    padding-top: 20px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section4 .contender .content .title {
+    color: var(--txt_color);
+    font-family: var(--font);
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.dot-flashing {
+    position: relative;
+    width: 8px;
+    height: 8px;
+    border-radius: 5px;
+    background-color: #9880ff;
+    color: #9880ff;
+    animation: dotFlashing 2s infinite linear alternate;
+    animation-delay: .5s;
+}
+
+.dot-flashing::before, .dot-flashing::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+}
+
+.dot-flashing::before {
+    left: -20px;
+    width: 8px;
+    height: 8px;
+    border-radius: 5px;
+    background-color: var(--txt_color);
+    color: var(--txt_color);
+    animation: dotFlashing 2s infinite alternate;
+    animation-delay: 0s;
+}
+
+.dot-flashing::after {
+    left: 20px;
+    width: 8px;
+    height: 8px;
+    border-radius: 5px;
+    background-color: var(--txt_color);
+    color: var(--txt_color);
+    animation: dotFlashing 2s infinite alternate;
+    animation-delay: 1s;
+}
+
+@keyframes dotFlashing {
+    0% {
+        background-color: transparent;
+    }
+    50%,
+    100% {
+        background-color: var(--txt_color);
+    }
+}
+
+
+.section4 .contender .content .txt {
+    color: var(--second_txt_color);
+    font-family: var(--font);
+    font-size: 22px;
+    width: 85%;
+    padding-left: 50px;
+}
+
+.section4 .contender .content .social {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.section4 .contender .content .social a svg {
+    transition-duration: .3s;
+}
+
+.section4 .contender .content .social a svg:hover {
+    transform: scale(1.1) rotate(10deg);
+}
+
+.section4 .contender .contact-form {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    --width-of-input: 300px;
+    --border-height: 1px;
+    --border-before-color: rgba(221, 221, 221, 0.39);
+    --input-hovered-color: #4985e01f;
+    position: relative;
+    width: var(--width-of-input);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.form.middle {
+    margin-top: 30px;
+}
+
+.form.send-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    color: #fff;
+    font-size: 0.9rem;
+    background-color: transparent;
+    width: 100%;
+    box-sizing: border-box;
+    padding-inline: 0.5em;
+    padding-block: 0.7em;
+    border: none;
+    border-bottom: var(--border-height) solid var(--border-before-color);
+    transition: .5s;
+    margin-top: 5px;
+    font-family: var(--font);
+}
+
+.input-border.name-border {
+    position: absolute;
+    background: var(--primary-color);
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+}
+
+.input-border.email-border {
+    position: absolute;
+    background: var(--primary-color);
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+}
+
+input:hover {
+    background: var(--input-hovered-color);
+}
+
+input:focus {
+    outline: none;
+}
+
+input:focus ~ .input-border.email-border {
+    width: 100%;
+}
+
+input:focus ~ .input-border.name-border {
+    width: 100%;
+}
+
+label {
+    margin-bottom: 5px;
+    font-family: var(--font);
+    color: var(--txt_color);
+    font-size: 18px;
+}
+
+.contact-form textarea {
+    color: var(--txt_color);
+    font-family: var(--font);
+    border: 1px solid rgba(221, 221, 221, 0.39);
+    padding: 0.75rem 1rem;
+    background-color: transparent;
+    resize: none;
+    margin-top: 20px;
+    outline: none;
+    height: 100px;
+    transition-duration: .2s;
+    border-radius: 5px;
+    width: calc(300px - 2*1rem);
+}
+
+textarea:focus {
+    border: 1px solid var(--primary-color)!important;
+}
+
+
+.send_form-btn {
+    font-family: inherit;
+    font-size: 20px;
+    background: royalblue;
+    color: white;
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+    font-family: var(--font);
+    width: 150px;
+    justify-content: center;
+}
+
+.send_form-btn span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+}
+
+.send_form-btn svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.send_form-btn:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.send_form-btn:hover svg {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+.send_form-btn:hover span {
+    transform: translateX(5em);
+}
+
+.send_form-btn:active {
+    transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+    from {
+        transform: translateY(0.1em);
+    }
+    to {
+        transform: translateY(-0.1em);
+    }
+}
+
+
+.foot {
+    height: 100px;
+    width: 100%;
+    background-color: #1c1d26;
 }
