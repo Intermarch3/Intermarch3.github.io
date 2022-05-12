@@ -1,4 +1,15 @@
 <!DOCTYPE html>
+<!--
+ *%%%                            #%%%   %%%&                     @@@     @@ 
+ /@@@.                           &@@@   &@@@                  	@@@@@     @@ 
+ /@@@. #@@@@*        %@@@@%      &@@@   &@@@      ,&@@@@(      	 @@@       @@ 
+ /@@@@@@@@@@@@*   @@@@@@@@@@@@   &@@@   &@@@    @@@@@@@@@@@#                @@ 
+ /@@@@     @@@@  @@@@      @@@@  &@@@   &@@@  ,@@@#      @@@@               @@] 
+ /@@@.     @@@@  @@@@@@@@@@@@@@  &@@@   &@@@  #@@@       @@@@               @@ 
+ /@@@.     @@@@  &@@@*           &@@@   &@@@   @@@@     %@@@(  	 @@@       @@ 
+ /@@@.     @@@@   .@@@@@@@@@@@   &@@@   &@@@    &@@@@@@@@@@   	@@@@@     @@ 
+                                                                 @@@     @@ 
+-->
 <html lang="en">
     <head>
         <title>Lucas's portfolio</title>
@@ -11,7 +22,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     </head>
-    <body>
+    <body class="body">
         <div class="welcome_page">
             <h1>Hello, my name is Lucas.</h1>
             <p class="subtitle">Welcome to my website !</p>
@@ -24,8 +35,8 @@
                 <div class="content">
                     <a href="#home" class="link main_page"><img src="img/Logo.png" alt="my logo" class="logo"></a>
                     <div class="content_btn">
-                        <div class="btn"><a href="#about_me">about me</a></div>
-                        <div class="btn"><a href="#projects">projects</a></div>
+                        <div class="btn"><a class="nav_bar_btn" href="#about_me">about me</a></div>
+                        <div class="btn"><a class="nav_bar_btn" href="#projects">projects</a></div>
                         <div class="btn"><a class="contact_page" href="#contact">Contact me</a></div>
                     </div>
                 </div>
@@ -33,16 +44,16 @@
             <div class="page_acceuil" id="home">
                 <section class="section1">
                     <div class="blur" data-tilt  data-tilt-speed="5000" data-tilt-max="5" data-tilt-transition="true" data-tilt data-tilt-scale="1.08">
-                        <h3 id="hi">Hello !  </h3>
+                        <h3 id="hi" class="h3_card">Hello !  </h3>
                         <h1>I am Lucas a.k.a Intermarch3</h1>
-                        <h3>computer development student</h3>
+                        <h3 class="h3_card">computer development student</h3>
                         <div class="contact_page"><a href="#contact" class="link_contact_page"><h1>Contact me</h1></a></div>
                     </div>
                 </section>
                 <section class="section2" >
-                    <head class="wave"><img src="img/wave.png" alt="wave"></head>
+                    <head class="wave"><img class="wave_sec2" src="img/wave.png" alt="wave"></head>
                     <div class="contender" id="about_me">
-                        <div class="card">
+                        <div class="card js-scroll slide-left">
                             <div class="content">
                                 <div class="title">
                                     <h1>Who i am ?</h1>
@@ -78,12 +89,12 @@
                     </div>
                 </section>
                 <div class="intersection">
-                    <img src="img/wave_bas.png" alt="wave" style="width: 100%; transform: translateY(-1px); height: 300px;">
+                    <img class="wave_bas" src="img/wave_bas.png" alt="wave" style="width: 100%; height: 300px;">
                 </div>
                 <section class="section3">
                     <div id="projects" style="top: -100px; position: relative;"></div>
-                    <div class="title" ><h1>My projects</h1></div>
-                    <div class="swiper-container">
+                    <div class="title" ><h1 class="title_project">My projects</h1></div>
+                    <div class="swiper-container js-scroll slide-left">
                         <div class="swiper-wrapper">
                             <div class="slider-item swiper-slide">
                                 <div class="slider-image-wrapper">
@@ -91,7 +102,7 @@
                                 </div>
                                 <div class="slider-item-content">
                                     <h1>Py_Pong</h1>
-                                    <p>My Pong game in python with Pygame made in 2022 at school with love</p>
+                                    <p>My Pong game in python with Pygame made in 2022</p>
                                     <h4>Language : python</h4>
                                 </div>
                             </div>
@@ -101,7 +112,7 @@
                                 </div>
                                 <div class="slider-item-content">
                                     <h1>Ecole-directe-in-cmd</h1>
-                                    <p>Ecole direct in python to get his : course schedule, grade, homeworks. its my favorite project made in 2020</p>
+                                    <p>Ecole direct in python to get his : course schedule, grade, homeworks ... unfinished project</p>
                                     <h4>Language : python</h4>
                                 </div>
                             </div>
@@ -121,7 +132,7 @@
                                 </div>
                                 <div class="slider-item-content">
                                     <h1>My first website</h1>
-                                    <p>my first website by me in 2020 for my teacher. it's a movie description website</p>
+                                    <p>my first website by me in 2020. It's the description of the movie <strong>Black Panther</strong>. It's a School project</p>
                                     <h4>Language : HTML/CSS</h4>
                                 </div>
                             </div>
@@ -132,10 +143,16 @@
                         </div>
                         <div class="swiper-pagination"></div>
                     </div>
+                    <button class="see-more js-scroll slide-left" onclick="window.location.href='projects.html'">
+                        <span class="circle" aria-hidden="true">
+                            <span class="icon arrow"></span>
+                        </span>
+                        <span class="button-text">See More</span>
+                    </button>
                 </section>
                 <section class="section4">
                     <div id="contact" style="top: -400px; position: relative;"></div>
-                    <div class="contender">
+                    <div class="contender js-scroll slide-right">
                         <div class="content">
                             <div class="title">
                                 <h1 style="margin-right: 40px;">Just say Hi</h1>
@@ -188,7 +205,18 @@
                     </div>
                 </section>
                 <footer class="foot">
-                    <!-- made  with ❤ by Intermarch3   dark/light mode btn     page fr/en link-->
+                    <!-- made  with ❤ by Intermarch3   dark/light mode btn-->
+                    <div class="contender">
+                        <div class="madeby">
+                            <h2>Made with <span>❤</span> by Intermarch3</h2>
+                        </div>
+                        <div class="mode-btn">
+                            <label class="switch">
+                                <input type="checkbox" id="switch_mode" checked>
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
                 </footer>
             </div>
         </div>
