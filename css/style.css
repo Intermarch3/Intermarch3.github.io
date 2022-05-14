@@ -3,7 +3,6 @@
 * {
     margin: 0;
     padding: 0;
-    /*transition: all .2s ease-in-out;*/
 }
 
 :root {
@@ -1198,18 +1197,47 @@ input:checked + .slider:before {
     }
 }
 
+@-webkit-keyframes slide-in-right {
+    0% {
+        -webkit-transform: translateX(-100px);
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes slide-in-right {
+    0% {
+        -webkit-transform: translateX(100px);
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 
 .scrolled.slide-left {
-    animation: slide-in-left 1s ease-in-out both;
+    animation: slide-in-left .8s ease-in-out both;
+    -webkit-animation: slide-in-left .8s ease-in-out both;
 }
 
 .scrolled.slide-right {
-    animation: slide-in-right 1s ease-in-out both;
+    animation: slide-in-right .8s ease-in-out both;
+    -webkit-animation: slide-in-right .8s ease-in-out both;
 }
 
 .js-scroll {
     opacity: 0;
-    transition: opacity 500ms;
+    transition: opacity 300ms;
+    -webkit-transition: opacity 300ms;
 }
 
 .js-scroll.scrolled {
