@@ -1237,7 +1237,7 @@ input:checked + .slider:before {
 .js-scroll {
     opacity: 0;
     transition: opacity 300ms;
-    -webkit-transition: opacity 300ms;
+    -webkit-transition: -webkit-opacity 300ms ease-out;
 }
 
 .js-scroll.scrolled {
