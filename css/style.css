@@ -1200,11 +1200,17 @@ input:checked + .slider:before {
 @-webkit-keyframes slide-in-right {
     0% {
         -webkit-transform: translateX(-100px);
+        -moz-transform: translateX(-100px);
+        -ms-transform: translateX(-100px);
+        -o-transform: translateX(-100px);
         transform: translateX(-100px);
         opacity: 0;
     }
     100% {
         -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
         transform: translateX(0);
         opacity: 1;
     }
@@ -1213,11 +1219,17 @@ input:checked + .slider:before {
 @-webkit-keyframes slide-in-right {
     0% {
         -webkit-transform: translateX(100px);
+        -moz-transform: translateX(100px);
+        -ms-transform: translateX(100px);
+        -o-transform: translateX(100px);
         transform: translateX(100px);
         opacity: 0;
     }
     100% {
         -webkit-transform: translateX(0);
+        -moz-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+        -o-transform: translateX(0px);
         transform: translateX(0);
         opacity: 1;
     }
@@ -1236,10 +1248,12 @@ input:checked + .slider:before {
 
 .js-scroll {
     opacity: 0;
+    -webkit-opacity: 0;
     transition: opacity 300ms;
     -webkit-transition: -webkit-opacity 300ms ease-out;
 }
 
 .js-scroll.scrolled {
     opacity: 1;
+    -webkit-opacity: 1;
 }
