@@ -1205,6 +1205,7 @@ input:checked + .slider:before {
         -o-transform: translateX(-100px);
         transform: translateX(-100px);
         opacity: 0;
+        -webkit-opacity: 0;
     }
     100% {
         -webkit-transform: translateX(0);
@@ -1213,6 +1214,7 @@ input:checked + .slider:before {
         -o-transform: translateX(0);
         transform: translateX(0);
         opacity: 1;
+        -webkit-opacity: 1;
     }
 }
 
@@ -1224,6 +1226,7 @@ input:checked + .slider:before {
         -o-transform: translateX(100px);
         transform: translateX(100px);
         opacity: 0;
+        -webkit-opacity: 0;
     }
     100% {
         -webkit-transform: translateX(0);
@@ -1232,6 +1235,7 @@ input:checked + .slider:before {
         -o-transform: translateX(0px);
         transform: translateX(0);
         opacity: 1;
+        -webkit-opacity: 1;
     }
 }
 
