@@ -1,5 +1,5 @@
 ## Warning
-This project is on development, the site has a lot of bugs and it is incomplete
+This project is on development, the site is not already responsive.
 
 ## Hello 👋
 Here is my personal portfolio. It contain my portfolio website with a link for each of my project. I hope you will like my work 😁 If you have a problem with one of my projects (execution, bug ...) or that you have advice, contact me, I would be impatient to answer you.
