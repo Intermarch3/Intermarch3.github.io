@@ -56,7 +56,8 @@
                 </section>
                 <section class="section2" >
                     <head class="wave"><img class="wave_sec2" src="img/wave.png" alt="wave"></head>
-                    <div class="contender" id="about_me">
+                    <div class="contender">
+                        <div id="about_me" style="top: -250px; position: relative;"></div>
                         <div class="card js-scroll slide-left">
                             <div class="content">
                                 <div class="title">
@@ -224,8 +225,18 @@
                 </footer>
             </div>
         </div>
+        <script> 
+            var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+            if (isIOS) {
+                document.getElementsByClassName("see-more")[0].classList.toggle("ios")
+                card_attr = document.getElementsByClassName("blur")[0].attributes
+                card_attr[2].value = 0
+                card_attr[3].value = 0
+                card_attr[5].value = 1
+            }
+        </script>
         <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.js" async></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
         <script type="text/javascript" src="js/script.js"></script>
     </body>
