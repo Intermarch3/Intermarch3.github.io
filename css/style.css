@@ -225,6 +225,8 @@ body {
     width: 100%;
     background-image: url("../img/img_acceuil.jpeg");
     background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
     padding-top: 80px;
     transform: translateY(1px);
 }
@@ -352,7 +354,7 @@ body {
 
 .page_general .page_acceuil .section2 {
     width: 100%;
-    height: 150vh;
+    height: 1150px;
     background-color: #315EAE;
 }
 
@@ -411,7 +413,7 @@ body {
     padding-right: 50px;
 }
 
-.page_general .page_acceuil .section2 .contender .card .content .text:after {
+.page_general .page_acceuil .section2 .contender .card .content .title:after {
     content: '';
     display: inline-block;
     width: 120px;
@@ -419,7 +421,7 @@ body {
     background: url(../img/moi-reflechie.png);
     background-size: 100%;
     position: absolute;
-    transform: translate(500px, -350px);
+    transform: translate(190px, -75px);
 }
 
 .page_general .page_acceuil .section2 .contender .card .content .text h3 {
@@ -506,13 +508,13 @@ body {
 .section3 {
     margin: 0;
     width: 100%;
-    height: 100vh;
+    height: 800px;
     background-color: var(--bg_dark_color);
     display: flex;
     align-items: center;
     flex-direction: column;
     font-family: var(--font);
-    margin-bottom: 125px;
+    margin-bottom: 0px;
     padding-top: 50px;
 }
 
@@ -827,7 +829,7 @@ button.see-more.ios .button-text {
 
 
 .section4 {
-    height: 100vh;
+    height: 760px;
     width: 100%;
     background-color: var(--bg_dark_color);
     display: flex;
@@ -1290,18 +1292,43 @@ and (max-device-width : 1024px)
 and (orientation : landscape) {
 
 }
-/* iPads (portrait) ----------- */
-@media screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : portrait) {
-
-}
 
 /* Desktops and laptops ----------- */
 @media screen 
-and (min-width : 1224px) {
+and (min-width : 1025px)
+and (max-width : 1430px) {
+    .page_general .page_acceuil .section2 .contender .card .content .text h3 {
+        font-family: var(--font);
+        word-spacing: 2.5px;
+        text-align: left;
+        line-height: 20px;
+        font-size: 18px;
+    }
+}
 
+@media screen 
+and (min-width : 1025px)
+and (max-width : 1355px) {
+    .page_general .page_acceuil .section1 .blur {
+        height: 280px;
+        width: 580px;
+    }
+    .page_general .page_acceuil .section1 .blur::after {
+        width: 110px;
+        height: 149px;
+        transform: translate(600px, -170px);
+    }
+    .page_general .page_acceuil .section2 .contender .card .content .title:after {
+        width: 100px;
+        height: 147px;
+    }
+    .section4 .contender .content .title {
+        font-size: 25px;
+    }
+    .section4 .contender .content .txt {
+        font-size: 23px;
+        padding-left: 25px;
+    }
 }
 
 /* Large screens ----------- */
@@ -1309,7 +1336,7 @@ and (min-width : 1224px) {
 and (min-width : 1824px) {
     /* section 1 */
     .content_btn .btn a {
-        font-size: 1.7em;
+        font-size: 1.7em!important;
     }
     .page_general .nav-bar {
         height: 100px;
@@ -1336,16 +1363,19 @@ and (min-width : 1824px) {
     .page_general .page_acceuil .section2 .contender .card {
         height: 560px;
     }
-    .page_general .page_acceuil .section2 .contender .card .content .text:after {
-        transform: translate(630px, -380px);
+    .page_general .page_acceuil .section2 .contender .card .content .title:after {
+        transform: translate(300px, -75px);
     }
     .page_general .page_acceuil .section2 .contender .card .content .text h3 {
         line-height: 30px;
         font-size: 1.5em;
     }
     /* section 3 */
+    #projects {
+        top: -150px;
+    }
     .section3 {
-        height: 920px;
+        height: 900px;
         margin-bottom: 0px;
     }
     .section3 .title h1 {
@@ -1358,8 +1388,10 @@ and (min-width : 1824px) {
     }
 
     /* section 4 */
+    #contact {
+        top: -500px;
+    }
     .section4 {
-        height: 760px;
         margin-bottom: 50px;
     }
     .section4 .contender {
@@ -1395,4 +1427,3 @@ and (min-width : 1824px) {
         font-family: var(--font);
     }
 }
-

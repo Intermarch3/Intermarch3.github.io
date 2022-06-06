@@ -18,10 +18,7 @@ function disparition(){
                     effect: 'fade',
                     loop: true,
                     speed: 300,
-                    
-                    mousewheel: {
-                        invert: false,
-                    },
+                    mousewheel: false,
                     pagination: {
                         el: '.swiper-pagination',
                         clickable: false,
