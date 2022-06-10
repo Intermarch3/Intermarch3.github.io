@@ -383,7 +383,7 @@ body {
 }
 
 .card.light_mode {
-    background-color: var(--bg_light_color)!important;
+    background-color: #f5f3ea!important;
     box-shadow: 0px 5px 10px 1px rgb(249 249 249 / 50%)!important;
 }
 
@@ -1287,10 +1287,89 @@ and (max-width : 320px) {
 }
 /* iPads (landscape) ----------- */
 @media screen 
-and (min-device-width : 768px) 
+and (min-device-width : 906px) 
 and (max-device-width : 1024px) 
 and (orientation : landscape) {
-
+    #about_me {
+        top: -50px;
+    }
+    /* section 2 */
+    .page_general .page_acceuil .section2 {
+        height: 1330px;
+    }
+    .page_general .page_acceuil .section2 .contender {
+        padding-top: 50px;
+    }
+    .page_general .page_acceuil .section2 .contender .card {
+        height: min-content;
+        margin-top: 50px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .page_general .page_acceuil .section2 .contender .card .content {
+        width: 80%;
+        padding-left: 0px;
+        padding-bottom: 45px;
+        border-bottom: 1px solid var(--second_txt_color);
+    }
+    .page_general .page_acceuil .section2 .contender .card .skill-bar {
+        width: 80%;
+        padding-top: 45px;
+        margin-bottom: 70px;
+        border-top: 1px solid var(--second_txt_color);
+    }
+    /* section 3 */
+    .swiper-container {
+        max-height: 500px;
+    }
+    /* section 4 */
+    .section4 {
+        height: 1100px;
+    }
+    .section4 .contender {
+        height: 950px;
+        width: 70%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section4 .contender .content {
+        width: 80%;
+        padding-top: 20px;
+        padding-left: 20px;
+        border-bottom: 1px solid #67686d;
+        border-right: 0px;
+    }
+    .section4 .contender .contact-form {
+        width: 80%;
+        margin-top: 20px;
+    }
+    .form {
+        --width-of-input: 400px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .contact-form textarea {
+        height: 150px;
+        width: calc(400px - 2*1rem);
+    }
+    .page_general .page_acceuil .section1 .blur {
+        height: 250px;
+        width: 550px;
+    }
+    .page_general .page_acceuil .section1 .blur h3 {
+        font-size: 25px;
+    }
+    .page_general .page_acceuil .section1 .blur h1 {
+        font-size: 30px;
+    }
+    .page_general .page_acceuil .section1 .blur::after {
+        width: 100px;
+        height: 135px;
+        transform: translate(580px, -150px);
+    }
+    #hi::after {
+        width: 30px;
+    }
 }
 
 /* Desktops and laptops ----------- */
@@ -1362,6 +1441,7 @@ and (min-width : 1824px) {
     }
     .page_general .page_acceuil .section2 .contender .card {
         height: 560px;
+        max-width: 1600px;
     }
     .page_general .page_acceuil .section2 .contender .card .content .title:after {
         transform: translate(300px, -75px);
