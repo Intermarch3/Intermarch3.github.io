@@ -232,8 +232,17 @@
             </div>
         </div>
         <script> 
-            var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-            if (isIOS) {
+            function iOS() {
+                return [
+                    'iPad Simulator',
+                    'iPhone Simulator',
+                    'iPod Simulator',
+                    'iPad',
+                    'iPhone',
+                    'iPod'
+                ].includes(navigator.platform) || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
+            }
+            if (iOS()) {
                 document.getElementsByClassName("see-more")[0].classList.toggle("ios")
                 card_attr = document.getElementsByClassName("blur")[0].attributes
                 card_attr[2].value = 0
