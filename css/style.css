@@ -48,7 +48,7 @@ body {
 }
 
 .welcome_page h1 {
-    font-size: clamp(1rem, 3vw + 1rem, 4rem);
+    font-size: clamp(5px, 3vw + 0.9rem, 4rem);
     position: relative;
     font-family: var(--font);
     position: relative;
@@ -78,9 +78,9 @@ body {
 }
 
 .welcome_page .subtitle {
-    margin-top: 40px;
+    margin-top: clamp(10px, 2vh,40px);
     color: var(--txt_color);
-    font-size: 2rem;
+    font-size: clamp(0.8rem, 3vw + 0.8rem, 3.8rem);
     font-weight: 400;
     font-family: var(--font);
     opacity: 0;
@@ -1285,9 +1285,82 @@ input:checked + .slider:before {
 and (max-width : 320px) {
 
 }
+
+@media screen 
+and (max-width : 710px) {
+
+}
+
+@media screen 
+and (max-width : 906px) {
+    .page_general .nav-bar {
+        height: 70px;
+        width: 100%;
+    }
+    .page_general .nav-bar .content {
+        width: 95%;
+    }
+    .page_general .nav-bar .content .logo {
+        display: grid;
+        place-items: center;
+        max-height: 85px;
+        height: auto;
+        width: 180px;
+    }
+    .page_general .nav-bar .content .content_btn .btn {
+        margin-left: 40px;
+    }
+    .page_general .nav-bar .content .content_btn .btn a {
+        font-size: 1.25em;
+    }
+    .page_general .page_acceuil .section1 .blur {
+        height: 225px!important;
+        width: 475px!important;
+        padding-left: 30px!important;
+    }
+    .page_general .page_acceuil .section1 .blur h1 {
+        font-size: 26px;
+    }
+    .page_general .page_acceuil .section1 .blur h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .page_general .page_acceuil .section1 .blur::after {
+        width: 81px!important;
+        height: 110px!important;
+        transform: translate(500px, -120px)!important;
+    }
+    .page_general .page_acceuil .section2 .contender .card .content .title:after {
+        width: 95px;
+        height: 140px;
+        transform: translate(180px, -75px);
+    }
+    .page_general .page_acceuil .section2 .contender .card .content .text h3 {
+        line-height: 23px;
+        font-size: 16.5px;
+    }
+    .swiper-container {
+        max-height: 400px;
+        max-width: 600px;
+    }
+    .slider-item {
+        width: 600px!important;
+    }
+    .section4 .contender .content {
+        padding-left: 0px!important;
+    }
+    .section4 .contender .content .title {
+        font-size: 26px;
+    }
+    .section4 .contender .content .txt {
+        font-size: 21px;
+        line-height: 29px;
+        padding-left: 10%;
+    }
+}
 /* iPads (landscape) ----------- */
 @media screen 
-and (min-device-width : 906px) 
 and (max-device-width : 1024px) 
 and (orientation : landscape) {
     #about_me {
