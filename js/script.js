@@ -7,6 +7,14 @@ $(".social-btn").hover(
     }
 )
 
+function mobileMenu() {
+    menu = document.getElementsByClassName('mobile-menu')[0]
+    if (menu.classList.contains('ok')) {
+        menu.classList.remove('ok')
+    } else {
+        menu.classList.add('ok')
+    }
+}
 
 function disparition(){
     $(document).ready(function(){
@@ -98,10 +106,12 @@ function light_mode(mode) {
         document.getElementsByClassName("wave_sec2")[0].attributes[1].value = 'img/wave_white_mode.png'
         document.getElementsByClassName("wave_bas")[0].attributes[1].value = 'img/wave_bas_white_mode.png'
         document.getElementsByClassName("slider-image")[5].style.filter = 'invert(100%)'
+        document.getElementsByClassName("menu-img")[0].attributes[1].value = 'img/menu-icon-dark.png'
     } else {
         document.getElementsByClassName("wave_sec2")[0].attributes[1].value = 'img/wave.png'
         document.getElementsByClassName("wave_bas")[0].attributes[1].value = 'img/wave_bas.png'
         document.getElementsByClassName("slider-image")[5].style.filter = 'invert(0%)'
+        document.getElementsByClassName("menu-img")[0].attributes[1].value = 'img/menu-icon-white.png'
     }
     document.body.classList.toggle("light_mode")
     document.getElementsByClassName("section1")[0].classList.toggle("light_mode")

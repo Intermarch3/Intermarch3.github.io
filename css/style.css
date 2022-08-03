@@ -170,6 +170,78 @@ body {
     align-items: center;
 }
 
+.menu {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.mobile-menu {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--nav_bar_color);
+    position: fixed;
+    z-index: 8;
+    transform: translateX(100vw);
+    transition: .4s ease-in-out;
+}
+
+.mobile-menu.ok {
+    transform: translateX(0)!important;
+}
+
+.menu-content-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.btn.menu-btn {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.btn.menu-btn a {
+    text-decoration: none;
+    color: var(--txt_color);
+    text-decoration: none;
+    font-family: var(--font);
+    font-size: 1.5em;
+    word-spacing: -8px;
+    transition: .3s;
+    text-shadow: 0px 0px 15px #ffffff;
+}
+
+.btn.menu-btn:nth-child(1) a:hover,
+.btn.menu-btn:nth-child(2) a:hover {
+    color: var(--primary-color);
+    text-shadow: 0px 0px 15px var(--primary-color);
+}
+
+.btn.menu-btn:nth-child(3) {
+    background: var(--primary-color);
+    box-shadow: 0 1px 5px var(--primary-color),inset 0 1px rgba(255,255,255,.2);
+    border-radius: 999px;
+    padding: 5px 20px;
+    color: var(--txt_color);
+    font-family: var(--font);
+    border: 1px solid rgba(0,0,0,.2);
+    white-space: nowrap;
+    transition: transform .2s;
+    font-size: 18px;
+}
+
+.btn.menu-btn:nth-child(3):hover { transform: scaleX(1.05); }
+
+
+
 .page_general .nav-bar .content .content_btn .btn {
     list-style: none;
     margin-left: 60px;
@@ -186,13 +258,13 @@ body {
     text-shadow: 0px 0px 15px #ffffff;
 }
 
-.page_general .nav-bar .content .content_btn .btn:nth-child(1) a:hover,
-.page_general .nav-bar .content .content_btn .btn:nth-child(2) a:hover {
+.page_general .nav-bar .content .content_btn .btn:nth-child(2) a:hover,
+.page_general .nav-bar .content .content_btn .btn:nth-child(3) a:hover {
     color: var(--primary-color);
     text-shadow: 0px 0px 15px var(--primary-color);
 }
 
-.page_general .nav-bar .content .content_btn .btn:nth-child(3) {
+.page_general .nav-bar .content .content_btn .btn:nth-child(4) {
     background: var(--primary-color);
     box-shadow: 0 1px 5px var(--primary-color),inset 0 1px rgba(255,255,255,.2);
     border-radius: 999px;
@@ -1283,7 +1355,54 @@ input:checked + .slider:before {
 /* Smartphones (portrait) ----------- */
 @media screen 
 and (max-width : 320px) {
+    .page_general .nav-bar {
+        height: 60px!important;
+        width: 100vw;
+    }
+    .page_general .nav-bar .content .logo {
+        display: grid;
+        place-items: center;
+        max-height: 85px;
+        height: auto;
+        width: 180px;
+    }
+    .page_general .page_acceuil .section1 .blur {
+        width: 100vw;
+        border-radius: 0px; 
+        margin-left: 0;
+        border-top: 1px solid rgb(125 125 125 / 40%);
+        border-bottom: 1px solid rgb(125 125 125 / 40%);
+        border-right: 0px solid black;
+        height: fit-content;
+        padding-left: 30px;
+    }
+    .page_general .page_acceuil .section1 .blur .contact_page {
+        margin-bottom: 20px;
+    }
+    .page_general .page_acceuil .section1 .blur h1 {
+        font-size: 26px;
+    }
+    .page_general .page_acceuil .section1 .blur h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .page_general .page_acceuil .section1 .blur::after {
+        display: none;
+    }
+    #hi::after {
+        width: 29px;
+    }
+}
 
+@media screen 
+and (max-width : 520px) {
+    .page_general .nav-bar .content .content_btn .btn {
+        display: none;
+    }
+    .menu {
+        display: flex;
+    }
 }
 
 @media screen 
@@ -1292,7 +1411,8 @@ and (max-width : 710px) {
 }
 
 @media screen 
-and (max-width : 906px) {
+and (min-width: 521px)
+and (max-width: 906px) {
     .page_general .nav-bar {
         height: 70px;
         width: 100%;
@@ -1361,6 +1481,7 @@ and (max-width : 906px) {
 }
 /* iPads (landscape) ----------- */
 @media screen 
+and (min-width: 521px)
 and (max-device-width : 1024px) 
 and (orientation : landscape) {
     #about_me {
