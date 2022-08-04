@@ -114,6 +114,7 @@ function light_mode(mode) {
         document.getElementsByClassName("menu-img")[0].attributes[1].value = 'img/menu-icon-white.png'
     }
     document.body.classList.toggle("light_mode")
+    document.getElementsByClassName("mobile-menu")[0].classList.toggle("light_mode")
     document.getElementsByClassName("section1")[0].classList.toggle("light_mode")
     document.getElementsByClassName("h3_card")[0].classList.toggle("light_mode")
     document.getElementsByClassName("h3_card")[1].classList.toggle("light_mode")

@@ -79,7 +79,7 @@ body {
 
 .welcome_page .subtitle {
     margin-top: clamp(10px, 2vh,40px);
-    color: var(--txt_color);
+    color: var(--second_txt_color);
     font-size: clamp(0.8rem, 3vw + 0.8rem, 3.8rem);
     font-weight: 400;
     font-family: var(--font);
@@ -188,6 +188,10 @@ body {
     z-index: 8;
     transform: translateX(100vw);
     transition: .4s ease-in-out;
+}
+
+.mobile-menu.light_mode {
+    background-color: #f9f9f9!important;
 }
 
 .mobile-menu.ok {
@@ -456,7 +460,7 @@ body {
 
 .card.light_mode {
     background-color: #f5f3ea!important;
-    box-shadow: 0px 5px 10px 1px rgb(249 249 249 / 50%)!important;
+    box-shadow: 0px 0px 20px 4px rgb(249 249 249 / 50%)!important;
 }
 
 
@@ -1354,7 +1358,8 @@ input:checked + .slider:before {
 /* responsive */ 
 /* Smartphones (portrait) ----------- */
 @media screen 
-and (max-width : 320px) {
+and (max-width: 520px)
+and (min-width: 320px) {
     .page_general .nav-bar {
         height: 60px!important;
         width: 100vw;
@@ -1392,6 +1397,131 @@ and (max-width : 320px) {
     }
     #hi::after {
         width: 29px;
+    }
+    .welcome_page .subtitle {
+        font-size: clamp(0.8rem, 3vw + 0.7rem, 3.8rem);
+        transform: translateY(0);
+    }
+    .welcome_page h1 {
+        font-size: clamp(5px, 3vw + 0.8rem, 4rem);
+    }
+    .page_general .page_acceuil .section2 img {
+        width: 100vw;
+    }
+
+    .page_general .page_acceuil .section2 {
+        height: 1300px;
+    }
+    .page_general .page_acceuil .section2 .contender {
+        padding-top: 0px;
+    }
+    .page_general .page_acceuil .section2 .contender .card {
+        display: flex;
+        align-items: center;
+        height: fit-content;
+        width: 100vw;
+        border-radius: 0;
+        margin-top: 50px;
+        flex-direction: column;
+    }
+    .page_general .page_acceuil .section2 .contender .card .content {
+        width: 90vw;
+        padding-left: 0;
+        padding-bottom: 20px;
+        border-bottom: 1px solid var(--second_txt_color);
+    }
+    .page_general .page_acceuil .section2 .contender .card .content .title:after {
+        display: none;
+    }
+    .page_general .page_acceuil .section2 .contender .card .skill-bar {
+        width: 90vw;
+        height: fit-content;
+        padding-bottom: 30px;
+        margin-top: 25px;
+    }
+    .page_general .page_acceuil .section2 .contender .card .content .title {
+        font-size: x-large;
+    }
+    .page_general .page_acceuil .section2 .contender .card .content .text {
+        padding-right: 0;
+    }
+    .page_general .page_acceuil .section2 .contender .card .skill-bar span {
+        margin-top: 25px;
+    }
+
+    .swiper-container {
+        border-radius: 0;
+    }
+    .slider-item {
+        border-radius: 0;
+    }
+    .slider-item-content h1 {
+        font-size: 26px;
+    }
+    .slider-item-content p {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .slider-buttons {
+        justify-content: space-around;
+    }
+
+    .section3 {
+        margin-bottom: 0px;
+        height: 750px;
+    }
+
+    .section4 {
+        height: 1000px;
+    }
+    .section4 .contender {
+        height: fit-content;
+        width: 100vw;
+        border-radius: 0px;
+        padding: 0px;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0px 0px 20px 0px var(--primary-color);
+    }
+    .section4 .contender .content {
+        height: -webkit-fill-available;
+        width: 100%;
+        padding-top: 30px;
+        padding-left: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-right: 0px solid;
+    }
+    .section4 .contender .contact-form {
+        width: 90%;
+    }
+    .section4 .contender .content .title {
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+    .section4 .contender .content .txt {
+        font-size: 21px;
+        width: 90%;
+        padding-left: 30px;
+    }
+    .section4 .contender .content .social {
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+
+    .foot {
+        height: 70px;
+    }
+    .foot .contender {
+        height: auto;
+        width: 100vw;
+    }
+    .madeby h2 {
+        font-size: 13px;
+    }
+    .switch {
+        margin-bottom: 0;
     }
 }
 
