@@ -1475,7 +1475,7 @@ and (min-width: 320px) {
         height: 1000px;
     }
     .section4 .contender {
-        height: fit-content;
+        height: 850px;
         width: 100vw;
         border-radius: 0px;
         padding: 0px;
