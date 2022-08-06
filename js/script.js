@@ -105,13 +105,15 @@ function light_mode(mode) {
     if(mode == "light") {
         document.getElementsByClassName("wave_sec2")[0].attributes[1].value = 'img/wave_white_mode.png'
         document.getElementsByClassName("wave_bas")[0].attributes[1].value = 'img/wave_bas_white_mode.png'
-        document.getElementsByClassName("slider-image")[5].style.filter = 'invert(100%)'
+        document.getElementsByClassName("pypong")[0].style.filter = 'invert(100%)'
         document.getElementsByClassName("menu-img")[0].attributes[1].value = 'img/menu-icon-dark.png'
+        document.getElementsByClassName("truck")[0].attributes[1].value = 'img/photoCard_project5.png'
     } else {
         document.getElementsByClassName("wave_sec2")[0].attributes[1].value = 'img/wave.png'
         document.getElementsByClassName("wave_bas")[0].attributes[1].value = 'img/wave_bas.png'
-        document.getElementsByClassName("slider-image")[5].style.filter = 'invert(0%)'
+        document.getElementsByClassName("pypong")[0].style.filter = 'invert(0%)'
         document.getElementsByClassName("menu-img")[0].attributes[1].value = 'img/menu-icon-white.png'
+        document.getElementsByClassName("truck")[0].attributes[1].value = 'img/photoCard_project5_white.png'
     }
     document.body.classList.toggle("light_mode")
     document.getElementsByClassName("mobile-menu")[0].classList.toggle("light_mode")

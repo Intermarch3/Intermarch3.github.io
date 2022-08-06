@@ -1540,11 +1540,6 @@ and (max-width : 520px) {
 }
 
 @media screen 
-and (max-width : 710px) {
-
-}
-
-@media screen 
 and (min-width: 521px)
 and (max-width: 906px) {
     .page_general .nav-bar {
@@ -1601,6 +1596,9 @@ and (max-width: 906px) {
     .slider-item {
         width: 600px!important;
     }
+    .slider-buttons {
+        padding-top: 0px;
+    }
     .section4 .contender .content {
         padding-left: 0px!important;
     }
@@ -1613,11 +1611,11 @@ and (max-width: 906px) {
         padding-left: 10%;
     }
 }
+
 /* iPads (landscape) ----------- */
 @media screen 
 and (min-width: 521px)
-and (max-device-width : 1024px) 
-and (orientation : landscape) {
+and (max-device-width : 1024px) {
     #about_me {
         top: -50px;
     }
