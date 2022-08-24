@@ -927,7 +927,7 @@ button.see-more.ios .button-text {
 }
 
 .section4 .contender .content {
-    height: -webkit-fill-available;
+    height: fit-content;
     width: 50%;
     padding-top: 20px;
     padding-left: 20px;
